@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+  name!: string;
+  date!: string;
+
+  onDateChange(value: string){
+    this.date = value;
+  }
+
+  onNameChange(value: string){
+    this.name = value;
+  }
 }
